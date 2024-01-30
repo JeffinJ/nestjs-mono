@@ -31,7 +31,7 @@ jobs:
       with:
         push: true
         tags: mbcommunity.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_4d427af97cf44e44aaf0da0fa6c3b5a6 }}/mbcommunity/nestjs-mono:${{ github.sha }}
-        file: ./Dockerfile
+        file: ./apps/app-a/Dockerfile
 
   deploy:
     runs-on: ubuntu-latest
